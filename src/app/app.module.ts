@@ -8,6 +8,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {NewswebserviceService} from './service/newswebservice.service';
 import { TechnewsComponent } from './technews/technews.component';
 import { ScienceComponent } from './science/science.component';
+import { SportsComponent } from './sports/sports.component';
+import { BusinessComponent } from './business/business.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ScienceComponent } from './science/science.component';
     AppComponent,
     TopheadingComponent,
     TechnewsComponent,
-    ScienceComponent
+    ScienceComponent,
+    SportsComponent,
+    BusinessComponent
   ],
   imports: [
     BrowserModule,

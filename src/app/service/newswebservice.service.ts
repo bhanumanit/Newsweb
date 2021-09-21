@@ -12,6 +12,8 @@ export class NewswebserviceService {
   newsApiUrl = "https://newsapi.org/v2/top-headlines?country=in&apiKey=61e54e603d964da5b416aee2e26446f2";
   technewsApiUrl = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=61e54e603d964da5b416aee2e26446f2";
   sciencenewsApiUrl = "https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=61e54e603d964da5b416aee2e26446f2";
+  businewsApiUrl = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=61e54e603d964da5b416aee2e26446f2";
+  sportsenewsApiUrl = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=61e54e603d964da5b416aee2e26446f2";
   topHeading():Observable<any>{
     return this._http.get(this.newsApiUrl);
   }
@@ -20,5 +22,11 @@ export class NewswebserviceService {
   }
   sceinceNews():Observable<any>{
     return this._http.get(this.sciencenewsApiUrl);
+  }
+  busiNews():Observable<any>{
+    return this._http.get(this.businewsApiUrl);
+  }
+  sportsNews():Observable<any>{
+    return this._http.get(this.sportsenewsApiUrl);
   }
 }
